@@ -1,0 +1,44 @@
+.digiClub {
+  @include flexSpaceBetween;
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 16px;
+  background: linear-gradient(76.02deg, #35a6c8 33.32%, #007295 71.55%),
+    radial-gradient(21.29% 87.33% at 50% 50.67%, #7cf2f6 0, #35a6c8 100%);
+  &__logo {
+    width: 40%;
+    img {
+      margin-right: 3rem;
+      max-width: 25%;
+    }
+  }
+  &__left {
+    width: 60%;
+    @include flexCenter;
+    gap: 0.5rem;
+    .items-borderRight {
+      border-radius: 12px 12px 12px 0;
+    }
+    .items-borderLeft {
+      border-radius: 12px 0 0 12px;
+      img {
+        margin-left: 1rem;
+      }
+    }
+    &__items {
+      @include flexSpaceBetween;
+      width: 32%;
+      background-color: $color-white;
+
+      h1 {
+        font-size: $font-size-sm;
+        font-weight: 400;
+        margin-right: 2rem;
+      }
+      img {
+        max-width: 50%;
+        object-fit: contain;
+      }
+    }
+  }
+}

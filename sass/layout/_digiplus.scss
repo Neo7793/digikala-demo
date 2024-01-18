@@ -1,0 +1,78 @@
+.digiPlus {
+  width: 100%;
+  @include flexCenter;
+  align-items: normal;
+  background-color: #941b80;
+  border-radius: 16px;
+  padding: 2rem;
+  gap: 0.5rem;
+  margin-top: $margin-top;
+  &__items {
+    @include flexColumnCenter;
+    align-items: normal;
+    justify-content: start;
+    width: 33%;
+    gap: 2rem;
+    &__top {
+      @include flexSpaceBetween;
+      h1 {
+        font-size: $font-size-md;
+        font-weight: 400;
+      }
+      span {
+        @include flexCenter;
+        color: #941b80;
+        gap: 0.5rem;
+      }
+    }
+    &__bottom {
+      @include flexWrapCenter;
+      gap: 1rem;
+      margin: 2rem 0 1rem 0;
+
+      img {
+        max-width: 30%;
+      }
+    }
+  }
+  .digiPlus-signUp {
+    justify-content: start;
+    padding: 1rem;
+    gap: 1rem;
+    a {
+      width: 100%;
+    }
+    h2 {
+      width: 100%;
+      color: white;
+      font-weight: 400;
+    }
+    span {
+      border: 1px solid $color-white;
+      width: 20%;
+      color: $color-white;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      border-radius: 12px;
+      padding: 1rem 5rem;
+      font-size: $font-size-13;
+      margin-top: 1rem;
+    }
+
+    background: url(../../public/images/digiPlus/plus-widget.png) no-repeat;
+    background-size: 37.2rem 28rem;
+    background-position-y: 100%;
+  }
+  .digiPlus-price,
+  .digiPlus-post {
+    background-color: $color-white;
+    padding: 1.5rem;
+  }
+  .digiPlus-price {
+    border-radius: 0px 12px 12px 0px;
+  }
+  .digiPlus-post {
+    border-radius: 12px 0px 0px 12px;
+  }
+}

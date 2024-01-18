@@ -1,0 +1,11 @@
+.picture {
+  @include flexSpaceBetween;
+  margin-top: $margin-top;
+  gap: 2rem;
+  &__items {
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+  }
+}

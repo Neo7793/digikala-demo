@@ -1,0 +1,13 @@
+.digiPicures {
+  @include flexSpaceBetween;
+  gap: 1.5rem;
+  margin-top: $margin-top;
+  &__items {
+    width: 25%;
+    img {
+      border-radius: 1.4rem;
+      max-width: 100%;
+      object-fit: contain;
+    }
+  }
+}

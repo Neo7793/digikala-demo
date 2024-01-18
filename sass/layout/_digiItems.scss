@@ -1,0 +1,31 @@
+.digi-content {
+  @include flexCenter;
+  gap: 9rem;
+  &__items {
+    @include flexColumnCenter;
+    gap: 1.5rem;
+    cursor: pointer;
+    img {
+      width: 5.2rem;
+      height: 5.2rem;
+    }
+    h1 {
+      font-size: $font-size-11;
+      font-weight: 400;
+      color: $color-text-700;
+    }
+    span {
+      @include flexCenter;
+      width: 5.2rem;
+      height: 5.2rem;
+      border-radius: 100%;
+      opacity: 0.3;
+      background-color: $color-dot;
+      i {
+        font-size: $font-size-26;
+        background-color: $color-dot;
+        opacity: 1;
+      }
+    }
+  }
+}

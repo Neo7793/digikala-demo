@@ -1,0 +1,59 @@
+.product {
+  @include flexCenter;
+  margin-top: $margin-top;
+  border: 1px solid $color-bg-100;
+  border-radius: 14px;
+  &__items {
+    width: 25%;
+    @include flexColumnCenter;
+    padding: 2rem;
+    border-left: 1px solid $color-bg-100;
+    gap: 1rem;
+    &__top {
+      @include flexColumn;
+      justify-content: start;
+      width: 100%;
+      gap: 1.5rem;
+      h1 {
+        font-size: $font-size-16;
+        color: $color-text-700;
+        font-weight: 400;
+      }
+      p {
+        font-size: $font-size-11;
+        color: $color-text-500;
+      }
+    }
+    &__bottoms {
+      width: 100%;
+      &__picture {
+        @include flexCenter;
+        &__right,
+        &__left {
+          padding: 1rem;
+          .product-images {
+            img {
+              max-width: 100%;
+              margin: 1rem 0;
+            }
+          }
+          .product-border-top {
+            border-top: 1px solid $color-bg-100;
+          }
+        }
+        &__right {
+          border-left: 1px solid $color-bg-100;
+        }
+      }
+    }
+    span {
+      font-size: $font-size-sm;
+      color: $color-secondry-500;
+      @include flexCenter;
+      gap: 1rem;
+      i {
+        font-size: $font-size-11;
+      }
+    }
+  }
+}

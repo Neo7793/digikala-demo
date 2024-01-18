@@ -1,0 +1,47 @@
+.button {
+  @include flexCenter;
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  background-color: $color-white;
+  cursor: pointer;
+  bottom: 4rem;
+  z-index: 1;
+  span {
+    i {
+      font-size: $font-size-md;
+    }
+  }
+}
+.next-picture {
+  right: 5rem;
+}
+.prev-picture {
+  right: 11rem;
+}
+.next-slider {
+  left: 1rem;
+  bottom: 13.5rem;
+}
+.prev-slider {
+  right: 1rem;
+  bottom: 13.5rem;
+}
+.shadow {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.14), -2px -2px 2px rgba(0, 0, 0, 0.14);
+}
+.next-brand {
+  left: 1rem;
+}
+.prev-brand {
+  right: 1rem;
+}
+.next-mostSell {
+  left: 1rem;
+  bottom: 12rem;
+}
+.prev-mostSell {
+  right: 1rem;
+  bottom: 12rem;
+}

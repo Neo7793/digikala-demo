@@ -1,0 +1,76 @@
+.mostSell {
+  margin-top: $margin-top;
+  padding: 2rem 1rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  border: 1px solid #e0e0e6;
+  border-radius: 14px;
+  @include flexColumnCenter;
+  &__top {
+    @include flexCenter;
+    h1 {
+      font-size: $font-size-lg;
+      font-weight: 400;
+      color: $color-text-700;
+    }
+    span {
+      font-size: $font-size-md;
+      color: $color-secondry-700;
+      position: absolute;
+      left: 4rem;
+      top: 3rem;
+    }
+  }
+  &__bottom {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 3rem 0.5rem 0 0.5rem;
+    position: relative;
+    flex-direction: row;
+    transition: all 0.5s ease 0s;
+
+    gap: 1rem;
+    &__items {
+      width: 25% !important;
+      @include flexColumn;
+      gap: 3rem;
+      flex-shrink: 0;
+      &__info {
+        width: 100%;
+        @include flexCenter;
+        justify-content: start;
+        gap: 1rem;
+        img {
+          max-width: 27%;
+          object-fit: contain;
+        }
+        h1 {
+          font-size: $font-size-lg;
+          color: $color-secondry-500;
+        }
+        p {
+          font-size: $font-size-13;
+          color: $color-text-500;
+          @include flexCenter;
+          height: 100%;
+          border-bottom: 1px solid $border-color;
+        }
+      }
+      &__info:last-child {
+        p {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+.imageOff {
+  margin-top: $margin-top;
+  img {
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 14px;
+  }
+}

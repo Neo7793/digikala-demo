@@ -1,0 +1,31 @@
+.law {
+  @include flexColumnCenter;
+  margin-top: 4rem;
+  gap: 4rem;
+  &__explain {
+    width: 100%;
+    @include flexCenter;
+    p {
+      font-size: $font-size-11;
+      color: $color-text-500;
+    }
+  }
+  &__pic {
+    @include flexWrapCenter;
+    width: 100%;
+    background-color: $color-bg-100;
+    &__items {
+      width: 11%;
+      @include flexCenter;
+      padding: 2rem;
+      border-left: 1px solid $border-color;
+      border-bottom: 1px solid $border-color;
+      img {
+        width: 50%;
+        height: 2rem;
+        object-fit: contain;
+        flex-grow: 1;
+      }
+    }
+  }
+}

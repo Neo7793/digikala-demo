@@ -1,0 +1,29 @@
+.cathegorize {
+  @include flexColumnCenter;
+  margin-top: $margin-top;
+  gap: 1.5rem;
+  &__header {
+    h1 {
+      font-size: $font-size-lg;
+      font-weight: 500;
+      color: $color-text-700;
+    }
+  }
+  &__content {
+    @include flexWrapCenter;
+    gap: 4rem;
+    &__items {
+      width: 14%;
+      @include flexColumnCenter;
+      gap: 2rem;
+
+      img {
+        max-width: 100%;
+      }
+      span {
+        font-size: $font-size-sm;
+        color: $color-text-700;
+      }
+    }
+  }
+}

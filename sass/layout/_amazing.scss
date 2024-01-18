@@ -1,0 +1,44 @@
+.amazing {
+  margin-top: $margin-top;
+  &__offer {
+    @include flexSpaceBetween;
+    background: url(../../public/images/freshPattern.svg) left center no-repeat;
+    width: 100%;
+    background-color: rgba(242, 242, 242, 1);
+    padding: 2rem 0;
+    border-radius: 1.2rem;
+    &__right {
+      @include flexCenter;
+      width: 45%;
+      gap: 3rem;
+      span {
+        background-color: $color-tertiary-700;
+        color: $color-white;
+        padding: 1rem 1.5rem;
+        border-radius: 3rem;
+        font-size: $font-size-sm;
+      }
+    }
+    &__left {
+      @include flexCenter;
+      width: 55%;
+      gap: 1rem;
+      &__items {
+        width: 10%;
+        img {
+          max-width: 100%;
+          border-radius: 100%;
+        }
+      }
+      span {
+        background-color: $color-white;
+        color: $color-tertiary-700;
+        font-size: $font-size-sm;
+        padding: 1.7rem 2rem;
+        border-radius: 3.2rem;
+        display: flex;
+        gap: 0.5rem;
+      }
+    }
+  }
+}

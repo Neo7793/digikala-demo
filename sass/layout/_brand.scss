@@ -1,0 +1,43 @@
+.brand {
+  @include flexColumnCenter;
+  margin-top: $margin-top;
+  gap: 1rem;
+  border: 1px solid $border-color;
+  border-radius: 14px;
+  padding-top: 3rem;
+  overflow: hidden;
+  position: relative;
+
+  &__top {
+    h1 {
+      font-size: $font-size-lg;
+      font-weight: 400;
+    }
+  }
+  &__bottom {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: all 0.5s ease 0s;
+
+    width: 100%;
+    padding: 2rem 2rem 2rem 0;
+    &__items {
+      @include flexCenter;
+      flex: 1;
+      padding: 0 1.3rem;
+      border-left: 1px solid $border-color;
+      img {
+        object-fit: contain;
+        width: 11rem;
+      }
+    }
+    .prev-brand {
+      bottom: 6rem;
+      right: 0.5rem;
+    }
+    .next-brand {
+      left: 0.5rem;
+      bottom: 6rem;
+    }
+  }
+}

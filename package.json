@@ -1,0 +1,18 @@
+{
+  "name": "digikala",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass sass/main.scss css/style.css --watch --source-map"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.64.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "prefix": "^1.0.0"
+  }
+}

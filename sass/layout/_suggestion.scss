@@ -1,0 +1,43 @@
+.suggestion {
+  margin-top: $margin-top;
+  @include flexColumnCenter;
+  gap: 2rem;
+  &__section:first-child {
+    border: none;
+  }
+  &__section {
+    @include flexCenter;
+    border: 1px solid $color-bg-100;
+    border-radius: 16px;
+    .suggestion-border-left {
+      border-left: none;
+    }
+    &__items {
+      @include flexColumnCenter;
+      border-left: 1px solid $color-bg-100;
+      width: 15%;
+      &__digi {
+        @include flexColumnCenter;
+        height: 50%;
+        margin-bottom: 4rem;
+        h2 {
+          font-size: $font-size-md;
+          font-weight: 400;
+          color: $color-text-700;
+        }
+        .picPadding {
+          padding: 3rem;
+          border-top: 1px solid $color-bg-100;
+          .picbg {
+            border-radius: 100%;
+
+            img {
+              max-width: 100%;
+              padding: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

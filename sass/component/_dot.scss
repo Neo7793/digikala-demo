@@ -1,0 +1,23 @@
+.picture-dot {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1.5rem;
+  &__contents {
+    @include flexCenter;
+    gap: 1rem;
+    span {
+      padding: 0.3rem;
+      background-color: $color-black;
+      border-radius: 100%;
+      opacity: 0.5;
+      cursor: pointer;
+    }
+    .active-dots {
+      background-color: $color-white;
+      width: 1.5rem;
+      height: 0.7rem;
+      border-radius: 30%;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.digiMag {
+  @include flexColumnCenter;
+  gap: 2rem;
+  margin-top: $margin-top;
+  &__top {
+    @include flexSpaceBetween;
+    padding: 0 2rem;
+    width: 100%;
+    h1 {
+      font-size: $font-size-md;
+      font-weight: 400;
+      color: $color-text-700;
+    }
+    span {
+      font-size: $font-size-13;
+      color: $color-secondry-500;
+      @include flexCenter;
+      gap: 1rem;
+      i {
+        font-size: $font-size-13;
+      }
+    }
+  }
+  &__bottom {
+    @include flexCenter;
+    gap: 1rem;
+    &__items {
+      width: 25%;
+      @include flexColumnCenter;
+      align-items: normal;
+      gap: 2rem;
+      border: 1px solid $border-color;
+      border-radius: 14px;
+      padding-bottom: 1rem;
+      img {
+        max-width: 100%;
+        border-radius: 14px 14px 0 14px;
+      }
+      p {
+        font-size: $font-size-sm;
+        color: $color-text-700;
+        width: 90%;
+        padding-right: 2rem;
+        line-height: 2;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+  }
+}

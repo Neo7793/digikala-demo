@@ -1,0 +1,36 @@
+//! Import Abstract
+@import "abstract/variable";
+@import "abstract/mixin";
+@import "abstract/functions";
+
+//! Import Base
+@import "base/reset";
+@import "base/typography";
+
+//! Import Pages
+@import "pages/home.scss";
+
+//! Import Layout
+@import "layout/header";
+@import "layout/storie";
+@import "layout/pictureSlider";
+@import "layout/digiItems";
+@import "layout/sliderContainer";
+@import "layout/amazing";
+@import "layout/digiPicture";
+@import "layout/cathegorize";
+@import "layout/picture";
+@import "layout/suggestion";
+@import "layout/brand";
+@import "layout/product";
+@import "layout/digiplus";
+@import "layout/digiClub";
+@import "layout/mostSell";
+@import "layout/digiMag";
+@import "layout/footer";
+@import "layout/law";
+
+//! Import Components
+@import "component/button";
+@import "component/dot";
+@import "component/overlay";
